@@ -67,7 +67,7 @@ Now, with the data cleaned, it was time to get more familiar with the data. In t
 
 ## Question 1: Does renovation have a noticeable effect on price?
 
-![](images/renovation.jpg)
+![](images/renovation.JPG)
 
 ### Conclusion 1:
 
@@ -75,7 +75,7 @@ Renovating a house in King's County has a mean price increase of $237,423 or 144
 
 ## Question 2: Is there a difference in price between a house built in a given time period versus a house renovated in that same time period?
 
-![](images/renvbuilt.jpg)
+![](images/renvbuilt.JPG)
 
 ### Conclusion 2:
 
@@ -85,11 +85,11 @@ There seems to be a signficantly larger price to houses that were renovated in a
 
 For this question, I first heatmap of the houses using the latitude and longitude data in terms of price.
 
-![](images/king.jpg)
+![](images/king.JPG)
 
 I then looked at the heatmap and thought it would be interesting to split the county into North and South at latitude 47.5 (roughly down the middle).
 
-![](images/northvsouth.jpg)
+![](images/northvsouth.JPG)
 
 ### Conclusion 3:
 
@@ -99,15 +99,15 @@ There is a tremendous difference in pricing between Southern King County homes a
 
 In this section, I built the model. To do this I started by addressing intercorrelation, or multicolinearity, of the features. Building a heatmap with seaborn gave a good visualization of the correlations within the different columns as well as the correlation of each column to our target, price.
 
-![](images/heatmap.jpg)
+![](images/heatmap.JPG)
 
 With reasoning, many of the original columns were removed and what seemed to be the best features were kept to build the model. When looking at how each category related to price, however, I kept noticing skewness due to outliers in price. I decided to take a look using a box plot which is great for detecting outliers.
 
-![](images/priceoutliers.jpg)
+![](images/priceoutliers.JPG)
 
 As the plot shows, many outliers for expensive houses. I decided to remove everything past the upper whisker and found better relation between my features and price. I then tested my model. Here is the OLS Summary:
 
-![](images/ols.jpg)
+![](images/ols.JPG)
 
 # INTERPRET
 
