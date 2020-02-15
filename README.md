@@ -49,7 +49,7 @@ This process was to be applied on the King County dataset with the end result be
 
 The first step was the shortest. It involved importing the data and taking a first look at what was being worked with.
 
-![](images/firstlook.jpg)
+![](images/firstlook.JPG)
 
 The columns that were included in the dataset are shown above, in Goals and Overview.
 
