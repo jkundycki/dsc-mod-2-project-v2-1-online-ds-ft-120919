@@ -93,7 +93,7 @@ I then looked at the heatmap and thought it would be interesting to split the co
 
 ### Conclusion 3:
 
-There is a tremendous difference in pricing between Southern King County homes and Northern King County Homes. I also explored as to why that may be with other data provided, but could not find any meaningful conclusions other than the waterfront data provided seeming to have a lot of values missing. In this case it seems to be location, location, location.
+There is a tremendous difference (almost double, 90% difference) in pricing between Southern King County homes and Northern King County Homes. I also explored as to why that may be with other data provided, but could not find any meaningful conclusions other than the waterfront data provided seeming to have a lot of values missing. In this case it seems to be location, location, location.
 
 # MODEL
 
