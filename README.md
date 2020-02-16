@@ -35,10 +35,16 @@ Below is the information provided for each house in the dataset (21597 houses we
 The goal of this project is to go through the 5 steps of a Data Scientist's Life cycle: OSEMN.
 
 ##### OSEMN:
+
+
 Obtain - Gather Data from relevant resources 
+
 Scrub - Clean data to formats that machine understands
+
 Explore - Find significant patterns and trends using statistical methods
+
 Model - Construct models to predict and forecast
+
 Interpret - Put the results into good use
 
 This process was to be applied on the King County dataset with the end result being the creation of a model that could predict the price of a house in King County.
@@ -123,4 +129,4 @@ When running linear regression, certain assumptions need to be met:
 3. MULTICOLINEARITY: There is little to no multicolinearity in the data.
 4. HOMOSCEDASTICITY: Residuals must be equal across the regression line.
 
-My model did not meet any of these assumptions so there is a lot of room for improvement. Some things that were positive about my model were that all of the features I selected were significantly significant to determining price. The R-squared statistic also was close to 91% which makes my model a decent predictor for price.
+My model did not meet any of these assumptions so there is a lot of room for improvement. Some things that were positive about my model were that all of the features I selected were significantly significant to determining price. The R-squared statistic also was close to 90% which makes my model a decent predictor for price. I had hoped to have more than 2 features by the end, but attempting to remove any multicollinearity posed to be a problem. Even with the last 2 remaining features, there was still some multicolinearity which can be observed by the large condition number in the OLS summary.
