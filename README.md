@@ -95,19 +95,24 @@ I then looked at the heatmap and thought it would be interesting to split the co
 
 There is a tremendous difference (almost double, 90% difference) in pricing between Southern King County homes and Northern King County Homes. I also explored as to why that may be with other data provided, but could not find any meaningful conclusions other than the waterfront data provided seeming to have a lot of values missing. In this case it seems to be location, location, location.
 
-# MODEL
+## Further Exploration
 
-In this section, I built the model. To do this I started by addressing intercorrelation, or multicolinearity, of the features. Building a heatmap with seaborn gave a good visualization of the correlations within the different columns as well as the correlation of each column to our target, price.
+### Multicolinearity
+
+The model cannot have multicolinearity or intercorrelation of features. This means that related features (columns that aren't price) need to be removed before building the model. Making a heatmap with seaborn gave a good visualization of the correlations within the different columns as well as the correlation of each column to our target, price.
 
 ![](images/heatmap.JPG)
 
-With reasoning, many of the original columns were removed and what seemed to be the best features were kept to build the model. When looking at how each category related to price, however, I kept noticing skewness due to outliers in price. I decided to take a look using a box plot which is great for detecting outliers.
+# MODEL
+
+With more explanation and deductive reasoning, many of the original columns were removed and what seemed to be the best features were kept to build the model. When looking at how each category related to price, however, I kept noticing skewness due to outliers in price. I decided to take a look using a box plot which is great for detecting outliers.
 
 ![](images/priceoutliers.JPG)
 
 As the plot shows, many outliers for expensive houses. I decided to remove everything past the upper whisker and found better relation between my features and price. I then tested my model. Here is the OLS Summary:
 
 ![](images/ols.JPG)
+
 
 # INTERPRET
 
@@ -118,4 +123,4 @@ When running linear regression, certain assumptions need to be met:
 3. MULTICOLINEARITY: There is little to no multicolinearity in the data.
 4. HOMOSCEDASTICITY: Residuals must be equal across the regression line.
 
-My model did not meet any of these assumptions except maybe multicolinearity so there is a lot of room for improvement. Some things that were positive about my model were that all of the features I selected were significantly significant to determining price. The R-squared statistic also was close to 92% which makes my model a decent predictor for price.
+My model did not meet any of these assumptions so there is a lot of room for improvement. Some things that were positive about my model were that all of the features I selected were significantly significant to determining price. The R-squared statistic also was close to 91% which makes my model a decent predictor for price.
