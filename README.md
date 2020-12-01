@@ -103,9 +103,9 @@ There is a tremendous difference (almost double, 90% difference) in pricing betw
 
 ## Further Exploration
 
-### Multicolinearity
+### Multicollinearity
 
-The model cannot have multicolinearity or intercorrelation of features. This means that related features (columns that aren't price) need to be removed before building the model. Making a heatmap with seaborn gave a good visualization of the correlations within the different columns as well as the correlation of each column to our target, price.
+The model cannot have multicollinearity or intercorrelation of features. This means that related features (columns that aren't price) need to be removed before building the model. Making a heatmap with seaborn gave a good visualization of the correlations within the different columns as well as the correlation of each column to our target, price.
 
 ![](images/heatmap.JPG)
 
@@ -126,7 +126,7 @@ When running linear regression, certain assumptions need to be met:
 
 1. LINEARITY: The relationship between the independent and dependent variables needs to be linear
 2. NORMALITY: The linear regression analysis requires all variables to be normal.
-3. MULTICOLINEARITY: There is little to no multicolinearity in the data.
+3. MULTICOLLINEARITY: There is little to no multicollinearity in the data.
 4. HOMOSCEDASTICITY: Residuals must be equal across the regression line.
 
 My model did not meet any of these assumptions so there is a lot of room for improvement. Some things that were positive about my model were that all of the features I selected were significantly significant to determining price. The R-squared statistic also was close to 90% which makes my model a decent predictor for price. I had hoped to have more than 2 features by the end, but attempting to remove any multicollinearity posed to be a problem. Even with the last 2 remaining features, there was still some multicolinearity which can be observed by the large condition number in the OLS summary.
